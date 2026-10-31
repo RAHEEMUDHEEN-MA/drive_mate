@@ -1,0 +1,71 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<head>
+  <style>
+  h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 4.33em;
+margin-block-end: 2.2em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*#customers tr:nth-child(even){background-color: #000000;}*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #198754;
+  color: white;
+
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="mfeedback">
+    <h6 align="center" >MECHANIC FEEDBACK</h6>
+   <table cellpadding="15" cellspacing="15" id="customers" align="center" width="295" border="3" bordercolor="green">
+    <tr>
+      <th scope="col">FEEDBACK</th>
+      <th scope="col">MECHANIC</th>
+      <th scope="col">USER</th>
+      <th scope="col">RATING</th>
+      <th scope="col">DATE</th>
+    </tr>
+    {% for i in val %}
+    <tr>
+       <td>{{i['feedback']}}</td>
+      <td>{{i['name']}}</td>
+      <td>{{i['uname']}}&nbsp;</td>
+      <td>{{i['rating']}}</td>
+      <td>{{i['date']}}&nbsp;</td>
+
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

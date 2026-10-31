@@ -1,0 +1,80 @@
+
+{% extends 'adminindex.html' %}
+{% block body %}
+<head>
+  <style>
+
+
+
+    h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 3em;
+margin-block-end: 1.5em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*#customers tr:nth-child(even){background-color: #000000;}*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #198754;
+  color: white;
+}
+  </style>
+
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+   <h6 align="center" >REQUESTS FROM MECHANICS</h6>
+  <table cellpadding="15"  id="customers" align="center" width="295" border="3" bordercolor="green">
+    <tr>
+      <th scope="col">name</th>
+      <th scope="col">place</th>
+      <th scope="col">post</th>
+      <th scope="col">pin</th>
+      <th scope="col">phone</th>
+      <th scope="col">email</th>
+      <th scope="col">username</th>
+      <!--<th scope="col">password</th>-->
+      <th scope="col">&nbsp;</th>
+    </tr>
+    {% for  i in val %}
+    <tr align="center">
+      <td>&nbsp;{{i['name']}}</td>
+      <td>{{i['place']}}</td>
+      <td>&nbsp;{{i['post']}}</td>
+      <td>&nbsp;{{i['pin']}}</td>
+      <td>&nbsp;{{i['phone']}}</td>
+      <td>&nbsp;{{i['email']}}</td>
+      <td>&nbsp;{{i['username']}}</td>
+      <!--<td>&nbsp;{{i['password']}}</td>-->
+      <td>
+        <p><a href="/accept?rid={{i['r_id']}}#cta"><u>Accept</u></a></p>
+         <p><a href="/reject?rid={{i['r_id']}}#cta" onclick="return confirm('deleting mecanic request')"><u>Reject</u></a></p>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+{% endblock %}
+

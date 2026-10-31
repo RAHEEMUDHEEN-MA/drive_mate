@@ -1,0 +1,84 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{TITLE PAGE}{i}{figure.caption.1}%
+\contentsline {chapter}{BONAFIDE CERTIFICATE}{i}{figure.caption.1}%
+\contentsline {chapter}{ABSTRACT}{iii}{figure.caption.2}%
+\contentsline {chapter}{LIST OF FIGURES}{vii}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}FEATURES OF THIS SYSTEM}{2}{section.1.1}%
+\contentsline {chapter}{\numberline {2}SYSTEM ANALYSIS}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}SYSTEM STUDY}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}EXISTING SYSTEM}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}PROPOSED SYSTEM}{4}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}FEASIBILITY STUDY}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}OPERATIONAL FEASIBILITY}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}ECONOMIC FEASIBILITY}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}TECHNICAL FEASIBILITY}{5}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}SYSTEM SPECIFICATION}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}INTRODUCTION}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}PURPOSE}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}SCOPE}{6}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}DEFINITIONS,ACRONYMS, AND ABBREVIATIONS}{7}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4} OVERVIEW}{7}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}OVERALL DESCRIPTION}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}PRODUCT PERSPECTIVE}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}PRODUCT FUNCTIONS}{7}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}USER CHARACTERISTICS}{8}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}PRINCIPLE ACTORS}{8}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}GENERAL CONSTRAINTS}{9}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}ASSUMPTION AND DEPENDENCIES}{9}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}SPECIFIC REQUIREMENTS}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}FUNCTIONAL REQUIREMENTS}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{Use case related to Installation}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{Use cases related to system login:}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{Use case related to user}{10}{figure.caption.6}%
+\contentsline {subsubsection}{Use case related to Notification}{13}{figure.caption.12}%
+\contentsline {subsubsection}{Use case related to Follow }{15}{figure.caption.17}%
+\contentsline {subsubsection}{Use case related to Comment}{17}{figure.caption.20}%
+\contentsline {subsubsection}{Use case related to share }{18}{figure.caption.23}%
+\contentsline {subsubsection}{Use case related to Like post}{18}{figure.caption.24}%
+\contentsline {subsubsection}{Use case related to}{19}{figure.caption.26}%
+\contentsline {subsection}{\numberline {3.3.2} PERFORMANCE REQUIREMENTS}{20}{subsection.3.3.2}%
+\contentsline {subsubsection}{HARDWARE AND SOFTWARE REQUIREMENTS}{20}{subsection.3.3.2}%
+\contentsline {subsubsection}{FORNT END}{21}{subsection.3.3.2}%
+\contentsline {subsubsection}{IDE}{23}{subsection.3.3.2}%
+\contentsline {subsubsection}{BACK END}{23}{subsection.3.3.2}%
+\contentsline {subsubsection}{WHY SQL USED IN THIS SYSTEM}{24}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3} NON-FUNCTIONAL REQUIREMENTS}{24}{subsection.3.3.3}%
+\contentsline {subsubsection}{SECURITY }{24}{subsection.3.3.3}%
+\contentsline {subsubsection}{CONCURRENCY and CAPACITY }{25}{subsection.3.3.3}%
+\contentsline {subsubsection}{ PERFORMANCE}{25}{subsection.3.3.3}%
+\contentsline {subsubsection}{ RELIABILITY}{25}{subsection.3.3.3}%
+\contentsline {subsubsection}{MAINTAINABILITY}{25}{subsection.3.3.3}%
+\contentsline {subsubsection}{ USABILITY}{25}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4} DESIGN CONSTRAINTS }{26}{subsection.3.3.4}%
+\contentsline {subsubsection}{RISK OF IDENTITY THEFT}{26}{subsection.3.3.4}%
+\contentsline {subsubsection}{ATTRACTS BAD CANDIDATES}{26}{subsection.3.3.4}%
+\contentsline {subsubsection}{ATTRACTS FRAUDULENT APPLICANTS}{26}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5} FUTURE EXTENSIONS }{26}{subsection.3.3.5}%
+\contentsline {chapter}{\numberline {4}SYSTEM DESIGN}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}MODULE DESCRIPTION}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}NORMAL USER}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}COMPANY USER}{27}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}DATABASE DESIGN}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}DATA FLOW DIAGRAM}{29}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}LEVEL 0}{29}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}LEVEL 1}{29}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}FORM DESIGN}{30}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1} Mobile UI }{30}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2} Web UI }{31}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}SYSTEM IMPLEMENTATION AND RESULT}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1} Important Codes}{35}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1} Log in(loginModel.dart)}{35}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Sign up (registrationModel.dart)}{35}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3} Add Job (jobDetailsModel.dart)}{36}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4} Post (viewPostModel.dart)}{38}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5} Apply job (applyjobsuccessModell.dart)}{39}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2} KMeans Clustering.java}{41}{section.5.2}%
+\contentsline {section}{\numberline {5.3}RESULT}{51}{section.5.3}%
+\contentsline {chapter}{\numberline {6}SYSTEM TESTING}{52}{chapter.6}%
+\contentsline {section}{\numberline {6.1}UNIT TESTING}{52}{section.6.1}%
+\contentsline {section}{\numberline {6.2}INTEGRATION TESTING}{53}{section.6.2}%
+\contentsline {section}{\numberline {6.3}SYSTEM TESTING}{53}{section.6.3}%
+\contentsline {chapter}{\numberline {7}CONCLUSION}{54}{chapter.7}%
+\contentsline {chapter}{\numberline {8}FUTURE SCOPES}{55}{chapter.8}%
+\contentsline {chapter}{\numberline {9}REFERENCES}{56}{chapter.9}%

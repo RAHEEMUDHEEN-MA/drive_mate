@@ -1,0 +1,70 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<head>
+<style>
+    h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 3em;
+margin-block-end: 1.5em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+</style>
+<body>
+<form id="form1" name="form1" method="post" action="editfuel2">
+    <h6 align="center" >EDIT FUEL-STATION</h6>
+<table   cellspacing="15"  bordercolor="white" cellpadding="15" align="center" width="900" border="3">
+    <tr>
+      <td width="200"><b>NAME</b></td>
+      <td><label>
+        <input type="text" name="textfield" value="{{val['name']}}"  class="form-control" required pattern="[A-Z a-z.][0-9]}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td><b>PHONE</b></td>
+      <td><label>
+        <input type="text" name="textfield2" value="{{val['phone']}}"  class="form-control"  required pattern="[6789][0-9]{9}" />
+      </label></td>
+    </tr>
+    <tr>
+        <td><b>EMAIL</b></td>
+      <td><label>
+        <input type="text" name="textfield3" value="{{val['email']}}" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td width="200"><b>PLACE</b></td>
+      <td><label>
+        <input type="text" name="textfield6" value="{{val['place']}}"  class="form-control" required pattern="[A-Z a-z.][0-9]}" />
+      </label></td>
+    </tr>
+    <tr>
+        <td><b>LATITUDE</b>></td>
+      <td><label>
+        <input type="text" name="textfield4" value="{{val['latitude']}}" class="form-control"  required/>
+      </label></td>
+    </tr>
+    <tr>
+        <td><b>LONGITUDE</b>></td>
+      <td><label>
+        <input type="text" name="textfield5" value="{{val['longitude']}}" class="form-control"  required />
+      </label></td>
+    </tr>
+
+    <tr>
+      <td align="center" height="25" colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="SAVE" />
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

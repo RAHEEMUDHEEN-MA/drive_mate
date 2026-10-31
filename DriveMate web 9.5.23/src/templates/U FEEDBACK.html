@@ -1,0 +1,69 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+<head><style>
+h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 4.33em;
+margin-block-end: 3.0em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*#customers tr:nth-child(even){background-color: #000000;}*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #009961;
+  color: white;
+}
+</style></head>
+
+<body>
+   <h6  align="center" >APP FEEDBACKS</h6>
+<form id="form1" name="form1" method="post" action="ufeedback">
+  <table  cellpadding="50" cellspacing="50" id="customers" bordercolor="green"   align="center" width="200" height="20" border="3">
+    <tr>
+
+      <th>FEEDBACK</th>
+      <th><B>RATING</B></th>
+      <th><B>USERNAME</B></th>
+      <th><B>DATE</B></th>
+    </tr>
+    {% for i in val %}
+    <tr align="center">
+
+      <td>{{i['feedbacknote']}}</td>
+      <td>{{i['rating']}}</td>
+      <td>{{i['name']}}&nbsp;</td>
+      <td>{{i['fdate']}}</td>
+
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

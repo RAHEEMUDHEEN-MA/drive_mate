@@ -1,0 +1,96 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+<head><style>
+h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 3em;
+margin-block-end: 1.5em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*#customers tr:nth-child(even){background-color: #000000;}*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+</style></head>
+
+<body>
+<form id="form1" name="form1" method="post" action="editmec2" >
+  <h6 align="center" >EDIT MECHANIC </h6>
+  <table   cellspacing="15"  bordercolor="white" cellpadding="15" align="center" width="900" border="3">
+    <tr>
+      <td width="200"><b>NAME</b></td>
+      <td><label>
+        <input type="text" name="textfield" value="{{val['name']}}"  class="form-control" required pattern="[A-Z a-z.]{3,25}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td><b>PLACE</b></td>
+      <td><label>
+        <input type="text" name="textfield2" value="{{val['place']}}"  class="form-control" required pattern="[A-Z a-z.]{3,50}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td><b>POST</b></td>
+      <td><label>
+        <input type="text" name="textfield3" value="{{val['post']}}" class="form-control" required pattern="[A-Z a-z.]{3,25}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td><b>PIN</b></td>
+      <td><label>
+        <input type="text" name="textfield4" value="{{val['pin']}}" class="form-control"  required pattern="[0-9]{6}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td><b>PHONE</b></td>
+      <td><label>
+        <input type="text" name="textfield5" value="{{val['phone']}}" class="form-control"  required pattern="[6789][0-9]{9}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td><b>EMAIL</b></td>
+      <td><label>
+        <input type="text" name="textfield6" value="{{val['email']}}" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"/>
+      </label></td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="SAVE" />
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

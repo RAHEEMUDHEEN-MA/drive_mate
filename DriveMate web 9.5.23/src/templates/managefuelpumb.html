@@ -1,0 +1,93 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<head><style>
+
+    h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 3em;
+margin-block-end: 2.2em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*#customers tr:nth-child(even){background-color: #000000;}*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #198754;
+  color: white;
+}
+</style></head>
+
+<body>
+<form id="form1" name="form1" method="post" action="addfuel1#cta">
+   <h6 align="center" >FUEL-STATIONS</h6>
+  <!--<p></p>-->
+    <!--<p1></p1>-->
+
+
+  <!--<p>-->
+
+
+  <!--</p>-->
+  <table cellpadding="15"  id="customers" align="center" width="295" border="3" bordercolor="green">
+    <tr align="center" >
+      <th width="30">ID</th>
+      <th width="46">NAME</th>
+      <th width="53">PLACE</th>>
+      <th width="53">PHONE</th>
+      <th width="48">EMAIL</th>
+      <th width="42">&nbsp;</th>
+    </tr>
+    {% for  i in val %}
+    <tr align="center">
+      <td> {{i['f_id']}}</td>
+      <td> {{i['name']}}</td>
+      <td> {{i['place']}}</td>
+      <td> {{i['phone']}}</td>
+      <td> {{i['email']}}</td>
+
+      <td><p><a href="editfuel?id={{i['l_id']}}#cta">EDIT</a></p>
+      <p><a href="deletef?id={{i['l_id']}}#cta" onclick="return confirm('Are you sure?')">DELETE</a></p>
+      </td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td align="center" colspan="10"><label>
+        <div align="center">
+            <!--<div class="icon">-->
+             <!--<button>  <div class="icon"><i class="bx bx-user-plus"></i></div></button>-->
+          <input type="submit"  name="Submit" value="ADD" />
+          <br>
+          <br>
+                      <p style="fontsize=20"><a href="fuelpumbrequest#cta">view requests</a>
+
+          <!--</div>-->
+            </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

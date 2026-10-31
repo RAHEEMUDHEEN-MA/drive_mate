@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layoutMode="opticalBounds"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:alpha="@android:dimen/thumbnail_height"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:backgroundTintMode="src_over"
+            android:fadingEdgeLength="@android:dimen/dialog_min_width_minor"
+            android:foregroundTint="#673AB7"
+            android:freezesText="false"
+            android:shadowColor="#CAC7C7"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="20"
+            android:text="USERNAME"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0B0909"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:shadowColor="#514B4B"
+            android:shadowRadius="10" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textColor="#050505"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/black"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="20"
+            android:singleLine="false"
+            android:soundEffectsEnabled="true"
+            android:text="login"
+            android:textColor="@color/white"
+            android:textColorHighlight="#681616"
+            android:textColorLink="#4D7A76"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:outlineProvider="none"
+            android:overScrollMode="never"
+            android:shadowColor="#696A6A"
+            android:shadowDx="15"
+            android:shadowDy="15"
+            android:shadowRadius="20"
+            android:text="sign-up"
+            android:textSize="16sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="86dp" />
+
+</LinearLayout>

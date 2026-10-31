@@ -1,0 +1,94 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<head>
+  <style>
+
+
+
+    h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 3em;
+margin-block-end: 1.5em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*#customers tr:nth-child(even){background-color: #000000;}*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #198754;
+  color: white;
+}
+</style></head>
+
+<body>
+<form id="form1" name="form1" method="post" action="addmec#cta">
+  <!--<p></p>-->
+    <!--<p1></p1>-->
+
+
+  <!--<p>-->
+
+
+  <!--</p>-->
+  <h6 align="center" >MECHANICS</h6>
+
+  <table cellpadding="15"  id="customers" align="center" width="295" border="3" bordercolor="green">
+    <tr align="center" >
+      <th width="46">ID</th>
+      <th width="46">NAME</th>
+      <th width="70">ADDRESS</th>
+      <th width="53">PHONE</th>
+      <th width="48">EMAIL</th>
+      <th width="42">&nbsp;</th>
+    </tr>
+    {% for  i in val %}
+    <tr align="center">
+      <td> {{i['m_id']}}</td>
+      <td> {{i['name']}}</td>
+      <td>&nbsp;{{i['place']}} {{i['post']}} {{i['pin']}}</td>
+      <td> {{i['phone']}}</td>
+      <td> {{i['email']}}</td>
+
+      <td><p><a href="editmec?id={{i['l_id']}}#cta">EDIT</a></p>
+      <p><a href="delete?id={{i['l_id']}}#cta" onclick="return confirm('Are you sure?')">DELETE</a></p>
+      <p><a href="mfeedback?id={{i['l_id']}}#cta">FEEDBACK</a></p>
+      </td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td align="center" colspan="10"><label>
+        <div align="center">
+          <input  align="center" type="submit" name="Submit" value="ADD" />
+          <br>
+          <br>
+          <p style="fontsize=20"><a href="mecrequest#cta">view requests</a>
+          </div>
+      </label></td>
+    </tr>
+  </table>
+
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+<head>
+  <style>
+
+
+
+    h6{
+color:green;
+font-size:22;
+display: block;
+margin-block-start: 3em;
+margin-block-end: 1.5em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*#customers tr:nth-child(even){background-color: #000000;}*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #198754;
+  color: white;
+}
+  </style>
+
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <p>&nbsp;</p>
+  <h6 align="center">FUEL-PUMB REQUESTS </h6>
+  <p>&nbsp;</p>
+ <table cellpadding="15"  id="customers" align="center" width="295" border="3" bordercolor="green">
+    <tr>
+      <th width="60" scope="col">NAME</th>
+      <th width="55" scope="col">PHONE</th>
+      <th width="53" scope="col">EMAIL</th>
+      <th width="51" scope="col">PLACE</th>
+
+      <th width="79" scope="col">USERNAME</th>
+      <th width="89" scope="col">PASSWORD</th>
+	  <th width="37" scope="col"></th>
+    </tr>
+   {%for i in val%}
+    <tr align="center">
+      <td>&nbsp;{{i['name']}}</td>
+      <td>&nbsp;{{i['phone']}}</td>
+      <td>&nbsp;{{i['email']}}</td>
+      <td>&nbsp;{{i['place']}}</td>
+      <td>&nbsp;{{i['username']}}</td>
+      <td>&nbsp;{{i['password']}}</td>
+      <td align="center">
+        <p><u><a href="/acceptfp?frid={{i['fr_id']}}#cta"onclick="return confirm('accepting fuel station request')">Accept</a></u></p>
+        <p><u><a href="/rejectfp?frid={{i['fr_id']}}#cta"onclick="return confirm('deleting fuel station request')">Reject</a></u></p></td>
+    </tr>
+   {% endfor %}
+  </table>
+  <p>&nbsp;</p>
+</form>
+</body>
+{% endblock %}
